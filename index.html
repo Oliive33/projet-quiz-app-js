@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Javascript</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start Quiz button -->
+    <h1>
+      <span>Q</span>uiz <span>J</span>S
+      <i class="far fa-question-circle"></i>
+    </h1>
+
+    <div class="start_btn"><button>Start</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info-title"><span>Les Règles du quizz</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. Vous avez seulement <span>15 secondes</span> pour chaques
+          questions.
+        </div>
+        <div class="info">
+          2. Quand vous sélectionné une question, vous ne pouvez la changer.
+        </div>
+        <div class="info">
+          3. Vous ne pouvez sortir du quiz, quand celui-ci à commnencé!
+        </div>
+        <div class="info">
+          5. Vous pourrez voir votre score une fois le quiz terminé.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit</button>
+        <button class="restart">Continuer</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Quiz JavaScript</div>
+        <div class="timer">
+          <div class="time_left_txt">Temps restant</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text"></div>
+        <div class="option_list"></div>
+      </section>
+
+      <!-- footer  Quiz Box -->
+      <footer>
+        <div class="total_que"></div>
+        <button class="next_btn">Suivant</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">Vous avez terminé ce quiz Javascript!</div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <button class="restart">Recommencer</button>
+        <button class="quit">Quitter</button>
+      </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
