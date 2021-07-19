@@ -265,3 +265,15 @@ function queCounter(index) {
     "</p> Questions</span>";
   bottom_ques_counter.innerHTML = totalQueCounTag;
 }
+
+//Loader
+const loader = document.querySelector(".loader");
+
+function load() {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.className += " hidden";
+    }, 2500);
+  });
+}
+load();

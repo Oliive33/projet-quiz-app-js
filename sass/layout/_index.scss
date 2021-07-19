@@ -4,7 +4,56 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+//-------- Loader -------- //
+.anim4 > div {
+  width: 18px;
+  height: 18px;
+  background: #333;
+  border-radius: 50%;
+  display: inline-block;
+  animation: troisPointsGrow 1s infinite ease-in-out alternate;
+}
 
+.anim4 .bounce1 {
+  animation-delay: -0.3s;
+}
+.anim4 .bounce2 {
+  animation-delay: -0.15s;
+}
+@keyframes troisPointsGrow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(43deg, #1d0e5c 0%, #44affc 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader.hidden {
+  animation: fadeOut 1.5s forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+//-------------------------------//
 body {
   background: #424958;
 }
@@ -42,7 +91,7 @@ h1 {
   font-size: 3.5rem;
 }
 span,
-i {
+.fa-question-circle {
   color: $color-primary-js;
 }
 
@@ -59,7 +108,7 @@ i {
   transition: all 0.2s ease-in-out;
 }
 .start_btn button:hover {
-  background: rgba(194, 193, 193, 0.811);
+  background: rgba(219, 218, 218, 0.811);
 }
 
 .info_box {
