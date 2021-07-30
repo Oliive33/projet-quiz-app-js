@@ -460,6 +460,14 @@ footer button.show {
     font-size: 2.5rem;
     top: 40%;
   }
+  .result_box {
+    width: 400px;
+    position: absolute;
+    top: 45%;
+  }
+  .result_box .icon {
+    font-size: 65px;
+  }
 }
 @media screen and (max-width: 450px) {
   .quiz_box,
@@ -474,6 +482,13 @@ footer button.show {
   }
   .info_box {
     width: 300px;
-    height: 60vh;
+  }
+  .result_box {
+    width: 325px;
+    position: absolute;
+    top: 40%;
+  }
+  .result_box .score_text span {
+    font-size: 16px;
   }
 }

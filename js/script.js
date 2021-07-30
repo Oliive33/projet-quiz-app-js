@@ -194,7 +194,7 @@ function showResult() {
   } else if (userScore > 1) {
     // si le player a plus de 1
     let scoreTag =
-      "<span>and better 🙂, vous avez <p>" +
+      "<span>better 🙂, vous avez <p>" +
       userScore +
       "</p> sur <p>" +
       questions.length +
@@ -244,16 +244,16 @@ function startTimer(time) {
 }
 
 //Ajout de le timeline
-function startTimerLine(time) {
-  counterLine = setInterval(timer, 29);
-  function timer() {
-    time += 1;
-    time_line.style.width = time + "px";
-    if (time > 549) {
-      clearInterval(counterLine);
-    }
-  }
-}
+// function startTimerLine(time) {
+//   counterLine = setInterval(timer, 29);
+//   function timer() {
+//     time += 1;
+//     time_line.style.width = time + "px";
+//     if (time > 549) {
+//       clearInterval(counterLine);
+//     }
+//   }
+// }
 
 function queCounter(index) {
   //creation du tag de fin
